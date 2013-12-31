@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <display-name>MVCDemo</display-name>
+    <description>MySQL Test App</description>
+    <resource-ref>
+        <description>DB Connection</description>
+        <res-ref-name>jdbc/TestDB</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+
+
+    <servlet>
+        <description></description>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>controllers.LoginController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/process</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LogOutController</servlet-name>
+        <servlet-class>controllers.LogOutController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogOutController</servlet-name>
+        <url-pattern>/logOutCtrl</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RegisterPageDirectorController</servlet-name>
+        <servlet-class>controllers.RegisterPageDirectorController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterPageDirectorController</servlet-name>
+        <url-pattern>/regiCtrl</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description></description>
+        <servlet-name>RegistrationController</servlet-name>
+        <servlet-class>controllers.RegistrationController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegistrationController</servlet-name>
+        <url-pattern>/processRegistration</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description></description>
+        <servlet-name>SearchController</servlet-name>
+        <servlet-class>controllers.SearchController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchController</servlet-name>
+        <url-pattern>/searchProcess</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>SearchPageDirectorController</servlet-name>
+        <servlet-class>controllers.SearchPageDirectorController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchPageDirectorController</servlet-name>
+        <url-pattern>/inputSearchCtrl</url-pattern>
+    </servlet-mapping>
+
+
+
+
+</web-app>
