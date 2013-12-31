@@ -1,0 +1,5 @@
+This is a simple assignment using JSP and Servlet with MVC software pattern.
+
+For running this project you need to have two tables named "employee_work_info" and "user" in the database named "employee_info". Table "employee_work_info" consists of employee information about his working location on a specific date, employee's name and his team leader. "user" table simply consists of the usernames and passwords of team leaders. I've used mysql as relational database management system and JNDI API for directory service.
+
+The project facilitates two types of users to log in. One, "Admin" and other "Team Leader". "user" table will be preset by the admin. The admin will also store information about employees. The team leader will log in with his username and password and will search with a valid date to see his employee eork location on that particular date. 
